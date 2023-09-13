@@ -1,11 +1,23 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // import img
 import Image from '../assets/img/r2.jpg';
 
 const About = () => {
+    useEffect(() => {
+        AOS.init({
+        //   duration: 1000,
+          once: true,
+        });
+        return () => {
+          AOS.refresh();
+        };
+      }, []);
   return (
-    <section className='section bg-secondary' id='about'>
+    <section className='section bg-secondary' id='about'  data-aos="flip-down"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="3000">
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-24'>
           <img

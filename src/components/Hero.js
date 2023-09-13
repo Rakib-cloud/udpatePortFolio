@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // import woman image
 import WomanImg from "../assets/img/final.png";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+    return () => {
+      AOS.refresh();
+    };
+  }, []);
 
   return (
     <section
       id="home"
       className="lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
-      
+      data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"
     >
 
       <div className="container mx-auto h-full">

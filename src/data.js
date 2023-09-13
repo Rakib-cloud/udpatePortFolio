@@ -107,10 +107,10 @@ export const projectsData = [
   {
     id: '3',
     image: Project3,
-    name: 'Client Managment System',
+    name: 'Client Management System',
     category: 'Management System',
-    details:'Manage all the clients and their managment system within one platform',
-    livelink:'https://rakibstuitorialpoint.netlify.app/',
+    details:'Manage All clients and marketing team for manage companys sales.',
+    livelink:'https://salesforce.selopia.com/',
   },
   {
     id: '4',
@@ -123,10 +123,10 @@ export const projectsData = [
   {
     id: '5',
     image: Project5,
-    name: 'RS Computer Zone',
-    category: 'Management System',
-    details:'This is Manufacture website where any user can visits and buy his computer parts whole sell.An Interacive Admin Dashboard is present also User dashboard',
-    livelink:'https://manufacture-computer.web.app/',
+    name: 'Rasel Store',
+    category: 'Ecommerce',
+    details:'In House product sales and manage',
+    livelink:'https://rasel.selopian.us/',
   },
   {
     id: '6',
